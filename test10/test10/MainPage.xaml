@@ -8,17 +8,19 @@
 
             <Label Text="My product list" FontSize="34"></Label>
 
-            <Label x:Name="myLabel1" FontSize="20"></Label>
-            <Label x:Name="myLabel2" FontSize="18"></Label>
-            <!--<ListView x:Name="productDetail">
+            
+            <ListView x:Name="productDetail">
                 <ListView.ItemTemplate>
                     <DataTemplate>
-                        <TextCell Text="{Binding productName}" TextColor="Purple" Detail="{Binding productDescription}" DetailColor="Maroon">
+                        <!--<TextCell Text="{Binding Name}" TextColor="Purple" Detail="{Binding Description}" DetailColor="Maroon">
                             
-                        </TextCell>
+                        </TextCell>-->
+                        <ImageCell Height="65"   Text="{Binding Name}" TextColor="Purple" Detail="{Binding Description}" DetailColor="Maroon" ImageSource="{Binding Image_path}" >
+                            
+                        </ImageCell>
                     </DataTemplate>
                 </ListView.ItemTemplate>
-            </ListView>-->
+            </ListView>
         </StackLayout>
     </ContentPage.Content>
 

@@ -16,16 +16,17 @@ namespace test10
 
             IList<Product> product = da.getProducts();
 
-
-            string Name = "test product";
-            string Description = "this is a product for only testing purpose";
-            myLabel1.Text = "My first Product";
-            myLabel2.Text = "Detail of my first product";
-
             InitializeComponent();
-          
-            
-           
+
+            productDetail.ItemsSource = product;
+            //string productName = product[0].Name;
+            //string productDescription = product[0].Description;
+
+            //string productName = "Zohaib";
+            //string productDescription = "Detail";
+
+
+
 
 
         }
